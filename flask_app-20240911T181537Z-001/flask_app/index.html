@@ -1,0 +1,68 @@
+<!-- <!DOCTYPE html> -->
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Customer Purchase Prediction</title>
+    <!-- <link rel="stylesheet" href="style.css"> -->
+</head>
+<body>
+    <div class="container">
+        <h1>Customer Purchase Prediction</h1>
+        <form id="prediction-form">
+            <label for="Administrative_Duration">Administrative Duration:</label>
+            <input type="number" id="Administrative_Duration" name="Administrative_Duration" step="any" required>
+            
+            <label for="Informational_Duration">Informational Duration:</label>
+            <input type="number" id="Informational_Duration" name="Informational_Duration" step="any" required>
+            
+            <label for="ProductRelated_Duration">Product Related Duration:</label>
+            <input type="number" id="ProductRelated_Duration" name="ProductRelated_Duration" step="any" required>
+            
+            <label for="BounceRates">Bounce Rates:</label>
+            <input type="number" id="BounceRates" name="BounceRates" step="any" required>
+            
+            <label for="ExitRates">Exit Rates:</label>
+            <input type="number" id="ExitRates" name="ExitRates" step="any" required>
+            
+            <label for="PageValues">Page Values:</label>
+            <input type="number" id="PageValues" name="PageValues" step="any" required>
+            
+            <label for="SpecialDay">Special Day:</label>
+            <input type="number" id="SpecialDay" name="SpecialDay" step="any" required>
+            
+            <label for="Month">Month:</label>
+            <input type="text" id="Month" name="Month" required>
+            
+            <label for="OperatingSystems">Operating Systems:</label>
+            <input type="number" id="OperatingSystems" name="OperatingSystems" required>
+            
+            <label for="Browser">Browser:</label>
+            <input type="number" id="Browser" name="Browser" required>
+            
+            <label for="Region">Region:</label>
+            <input type="number" id="Region" name="Region" required>
+            
+            <label for="TrafficType">Traffic Type:</label>
+            <input type="number" id="TrafficType" name="TrafficType" required>
+            
+            <label for="VisitorType">Visitor Type:</label>
+            <select id="VisitorType" name="VisitorType" required>
+                <option value="Returning_Visitor">Returning Visitor</option>
+                <option value="New_Visitor">New Visitor</option>
+                <option value="Other">Other</option>
+            </select>
+            
+            <label for="Weekend">Weekend:</label>
+            <select id="Weekend" name="Weekend" required>
+                <option value="1">Yes</option>
+                <option value="0">No</option>
+            </select>
+            
+            <button type="submit">Predict</button>
+        </form>
+        <div id="result"></div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
